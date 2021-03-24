@@ -1,0 +1,23 @@
+{
+  "name": "basic-contact-form",
+  "version": "1.0.0",
+  "description": "Building a basic contact form with HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "slides": "npx reveal-md basic-contact-form.md",
+	"customcss": "npx reveal-md basic-contact-form.md -w --css custom.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/basic-contact-form.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/basic-contact-form/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/basic-contact-form#readme",
+  "devDependencies": {
+    "reveal-md": "^5.0.0"
+  }
+}
