@@ -25,7 +25,8 @@
 						 src="images/portfolio_brand.png"
 						 alt="brand">
 				</a>
-				<button class="hamburger"></button>
+				<button class="hamburger"
+						aria-label="Right Align"></button>
 				<ul class="main-nav">
 					<li>
 						<a class="menu-link"
@@ -52,8 +53,9 @@
 		</header>
 		<form action="submit.html"
 			  id="userForm">
-			<h1 id="main-contact-heading">Contact Maria</h1>
+			<h1 id="main-contact-heading">Contact Info for Maria</h1>
 			<fieldset>
+				<legend>Personal Info:</legend>
 				<label for="firstname">First Name:</label>
 				<input type="text"
 					   name="firstname"
@@ -62,6 +64,7 @@
 					   required>
 			</fieldset>
 			<fieldset>
+				<legend>Personal Info:</legend>
 				<label for="lastname">Last Name:</label>
 				<input type="text"
 					   name="lastname"
@@ -70,6 +73,7 @@
 					   required>
 			</fieldset>
 			<fieldset>
+				<legend>Personal Info:</legend>
 				<label for="email">Email:</label>
 				<input type="email"
 					   name="email"
@@ -81,7 +85,8 @@
 				<legend>Submit Info:</legend>
 				<button type="submit"
 						form="userForm"
-						id="btn">Submit
+						id="btn"
+						aria-label="Left Align">Submit
 				</button>
 			</fieldset>
 		</form>
