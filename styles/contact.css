@@ -20,9 +20,8 @@ a {
     color: #a10ebd;
 }
 
-h1 {
+h1, .submit-main-heading {
   text-align: center;
-  color: #228b22;
 }
 
 h1, h2 {
@@ -30,15 +29,19 @@ h1, h2 {
     font-weight: normal;
 }
 
+.submit-article {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 25vh auto;
+}
+
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 
 .header {
-	margin-top: 0;
-}
-
-.header {
 	background: rgba(104, 151, 187, 1);
+	margin-top: 0;
 }
 
 .header .logo {
@@ -64,21 +67,21 @@ h1, h2 {
 /* nav styles using Flexbox (screens greater than 899px) */
 .navbar {
     background: transparent;
-    width: 100vw;
 	display: flex;
+	align-items: center;
+	height: 70px;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
-    align-items: center;
+	width: 100vw;
 }
 
 .main-nav {
-	width: 100vw;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1.5rem;
 	margin-right: 1rem;
 	margin-top: 2rem;
+	width: 100vw;
 }
 
 li {
@@ -156,8 +159,8 @@ a:hover {
     }
 
     .main-nav {
+		background: #6897BB;
 		display: block;
-        background: #6897BB;
         height: 100vh;
         left: 0;
 		margin-top: 0;
@@ -186,16 +189,16 @@ a:hover {
 /* Contect Form Styling */
 
 form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	width: 90%;
-	max-width: 600px;
-	margin: 15vh auto;
 	background: #ffc600;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 15vh auto;
+	max-width: 600px;
 	padding: 1.5rem 0.5rem 3rem;
+	width: 90%;
 }
 
 legend {
@@ -203,14 +206,14 @@ legend {
 }
 
 fieldset {
+	border-color: #000;
+	border-style: double;
+	border-width: 6px;
 	display: flex;
 	align-items: center;
-	width: 97.5%;
-	max-width: 600px;
 	margin-top: 1.5rem;
-	border-style: double;
-	border-color: green;
-	border-width: 6px;
+	max-width: 600px;
+	width: 97.5%;
 }
 
 fieldset > label {
@@ -224,8 +227,8 @@ fieldset > label + * {
 
 fieldset input {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
+	flex-wrap: wrap;
 	height: 36px;
 }
 
@@ -238,14 +241,13 @@ label {
 }
 
 input {
-	-webkit-appearance: none;
- 	-moz-appearance: none;
 	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: #ffc600;
 	border: none;
+	font-size: 0.9rem;
 	outline: none;
-	color: #228b22;
-    font-size: 0.9rem;
-    background: #ffc600;
     width: 97.5%;
 }
 
@@ -253,71 +255,108 @@ input {
 	fieldset, input {
 		display: block;
 	}
-	input {
-		width: 100%;
-		max-width: 600px;
+	label, input[placeholder] {
+		margin-left: 0.25rem;
 	}
 }
 
+/* Input placeholder font color styling fix across browsers */
+
 input[name="firstname"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #228b22;
+  color: #000;
 }
 
 input[name="firstname"]::-moz-placeholder {
   /* Firefox 19+ */
-  color: #228b22;
+  color: #000;
 }
 
 input[name="firstname"]:-ms-input-placeholder {
   /* IE 10+ */
-  color: #228b22;
+  color: #000;
 }
 
 input[name="firstname"]:-moz-placeholder {
   /* Firefox 18- */
-  color: #228b22;
+  color: #000;
 }
 
-input[name="firstname"]::-webkit-input-placeholder {
+input[name="lastname"]::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #228b22;
+    color: #000;
 }
 
-input[name="firstname"]::-moz-placeholder {
+input[name="lastname"]::-moz-placeholder {
     /* Firefox 19+ */
-    color: #228b22;
+    color: #000;
 }
 
-input[name="firstname"]:-ms-input-placeholder {
+input[name="lastname"]:-ms-input-placeholder {
     /* IE 10+ */
-    color: #228b22;
+    color: #000;
 }
 
-input[name="firstname"]:-moz-placeholder {
+input[name="lastname"]:-moz-placeholder {
     /* Firefox 18- */
-    color: #228b22;
+    color: #000;
 }
 
 input[name="email"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #228b22;
+  color: #000;
 }
 
 input[name="email"]::-moz-placeholder {
   /* Firefox 19+ */
-  color: #228b22;
+  color: #000;
 }
 
 input[name="email"]:-ms-input-placeholder {
   /* IE 10+ */
-  color: #228b22;
+  color: #000;
 }
 
 input[name="email"]:-moz-placeholder {
   /* Firefox 18- */
-  color: #228b22;
+  color: #000;
 }
+
+/* Input placeholder font color styling fix across browsers */
+
+/* Form Button Styling */
+
+form button {
+	background: #34d0a5;
+	border: 1px solid;
+	border-radius: 3px;
+	outline: none;
+    font-size: 1.3rem;
+	padding: 0.5rem;
+	margin: 0.25rem 0.25rem 0.75rem;
+}
+
+form button:hover {
+    background: #b26ca2;
+    /* border-radius: 3px; */
+    box-shadow: 0 1px 2px 2px #34686f;
+    color: #fff;
+    /* margin: 0 auto; */
+    padding: 0.75rem;
+    width: 6rem;
+}
+
+form button:active {
+    background: #b26ca2;
+    /* border-radius: 3px; */
+    box-shadow: 0 4px 5px 5px #34686f;
+    color: #fff;
+    /* margin: 0 auto; */
+    padding: 0.75rem;
+    width: 6rem;
+}
+
+/* End contact.html button styling */
 
 /* End contact.html styling */
 
