@@ -81,7 +81,7 @@ But what DOES the `action attribute` actually do when a `backend server/database
 <section class="section">
 	<h2 class="sentence">Sending form data</h2>
 
-An `HTML form` on a **web page** is just a ***convenient***, ***user-friendly*** way to **configure** an `HTTP request` to **send data** to a `server`. This ***enables*** the `user` to **provide information** to be ***delivered*** in the `HTTP request` to the `server/database`. That ***means*** we would **need** a `backend-server` ***configured*** and a `backend database` ***configured*** to **save** the `data`. There is ***no point*** in truly **setting up** a `form` as we have **set up** here ***without*** those two **included** in our `site` as well. To **learn more** about ***how*** `client-server architectures` **work**, **read** MDN's [Server-side website programming first steps](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps) module.
+An `HTML form` on a **web page** is just a ***convenient***, ***user-friendly*** way to **configure** an `HTTP request` to **send data** to a `server`. This ***enables*** the `user` to **provide information** to be ***delivered*** in the `HTTP request` to the `server/database`. That ***means*** we would **need** a `backend-server` ***configured*** and a `backend database` ***configured*** to **save** the `data`. There is ***no point*** in truly **setting up** a `form` as we have **set up** here ***without*** those two **included** in our `site` as well. To **learn more** about ***how*** `client-server architectures` **works**, **read** MDN's [Server-side website programming first steps](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps) module.
 
 </section>
 
@@ -137,7 +137,7 @@ The `input type="email"` is **used** for `input fields` that ***should contain**
 <section class="section">
 	<h2 class="sentence">The button type="submit"</h2>
 
-We are ***not*** actually using an `input element` with the `type "submit"` for our f`orm button`. We are **using** a `button element` with the `type="submit"`.
+We are ***not*** actually using an `input element` with the `type "submit"` for our `form button`. We are **using** a `button element` with the `type="submit"`.
 
 The [HTML button element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) ***represents*** a `clickable button`, **used** to ***submit*** `forms` or **anywhere** in an `HTML document` for ***accessible***, ***standard*** `button functionality`. This of course, would then ***also involve*** `JavaScript`.
 
@@ -147,7 +147,7 @@ We **use** `form-related attributes` in our `button element` ***within*** our `H
 
 The `button element`'s `type attribute` with the **value** of `"submit"`, ***permits*** the `button element` to **submit** `form data` to the `backend server/database`. This is the ***default*** if the `type attribute` is ***not specified*** for `buttons` **associated** with a `form element`, or if the `attribute value` is ***empty*** or ***contains*** an `invalid value`.
 
-The `form attribute` of the `button element` ***associates*** the `button` with its `"form owner"`. In ***other words***, with a ***particular*** `form`. The **value** of the `form attribute` ***must be*** the `id d` of a `form` within the ***same*** `HTML document` (`page`). If this `attribute` is ***not set***, the `<button>` is **associated with** its ***ancestor*** `<form> element`, if ***any***. The `button` might ***not*** be a `child` of a `form`, and therefore would ***not contain*** a `form ancestor`.
+The `form attribute` of the `button element` ***associates*** the `button` with its `"form owner"`. In ***other words***, with a ***particular*** `form`. The **value** of the `form attribute` ***must be*** the `id` of a `form` within the ***same*** `HTML document` (`page`). If this `attribute` is ***not set***, the `<button>` is **associated with** its ***ancestor*** `<form> element`, if ***any***. The `button` might ***not*** be a `child` of a `form`, and therefore would ***not contain*** a `form ancestor`.
 
 In the **case** of ***our*** `form`, our `button element` **contains** the `form attribute` **value** of `"userForm"`, because the `id` of the `form element` on the `contact.html` **page** (here it is the `index.html` **page**) is `"userForm"`.
 
@@ -254,7 +254,7 @@ The `\` **escapes** the `.` character that ***follows***. It simply means a `dot
 
 The `[a-z]` ***means*** that the **value** of the `input field` ***provided*** by the `user` should ***match*** any character within the `"a"` to `"z"` **range**.
 
-The `{2}` is ***also*** a `quantifier`, and it ***means*** that the `extension` should ***natch*** 2 or more characters **represented** in the `[a-z]` **square brackets**.
+The `{2}` is ***also*** a `quantifier`, and it ***means*** that the `extension` should ***match*** 2 or more characters **represented** in the `[a-z]` **square brackets**.
 
 `$` ***represents*** the **end** of the `email address`. It ***denotes*** the **end** of the `email address`.
 
@@ -389,7 +389,7 @@ The ***other*** associated `CSS code` for the `contact.html` **page** is ***loca
 <section class="section">
 	<h2 class="sentence">Styling the input placeholder attribute's text</h2>
 
-One ***cannot*** simply **style** the `input placeholder attribute`'s **text** right out of the the box. One **has** to ***use*** [vendor prefixes](https://bitsofco.de/css-vendor-prefixes/) **across browsers** in order to ***make*** it ***happen***, and for the **changes** to ***look*** the ***same*** `across browsers`. So ***after&*** all the `contact.html` ***associated*** `CSS code` in `styles/contact.css`, I ***added*** the ***following***:
+One ***cannot*** simply **style** the `input placeholder attribute`'s **text** right out of the the box. One **has** to ***use*** [vendor prefixes](https://bitsofco.de/css-vendor-prefixes/) **across browsers** in order to ***make*** it ***happen***, and for the **changes** to ***look*** the ***same*** `across browsers`. So ***after*** all the `contact.html` ***associated*** `CSS code` in `styles/contact.css`, I ***added*** the ***following***:
 
 ```css
 /* Input placeholder font color styling fix across browsers */
@@ -468,7 +468,7 @@ The `index.html` **file** here contains ***all*** the `contact.html` **related**
 <section class="section">
 	<h2 class="sentence">Transforming the contact.html page into a real world front end contact page</h2>
 
-***After*** the **course** is ***over***, you will ***probably want*** to **keep** your `portfolio site` for ***real world***, ***job-seeking*** purposes. That ***is***, after the all, the ***whole point*** of **having** a **personal portfolio site**. A **personal portfolio site** is **also** a ***standard*** for **everyone** these days, ***designers*** or ***not***, as a ***means*** of **attracting** the **attention** of ***potential employers***, when **seeking employment**. This **makes** it ***possible*** for those **seeking people** with **your talents** to ***find*** you on the `internet`, and **contact** you ***based*** on the **work** they ***see***, regarding **open positions**. That's ***also*** why it is **extremely important** to **put** your ***best foot*** forward and ***do*** your ***best work*** possible, thereby **showing** the ***best side*** of **yourself** when ***building*** your `portfolio site`.
+***After*** the **course** is ***over***, you will ***probably want*** to **keep** your `portfolio site` for ***real world***, ***job-seeking*** purposes. That ***is***, after all, the ***whole point*** of **having** a **personal portfolio site**. A **personal portfolio site** is **also** a ***standard*** for **everyone** these days, ***designers*** or ***not***, as a ***means*** of **attracting** the **attention** of ***potential employers***, when **seeking employment**. This **makes** it ***possible*** for those **seeking people** with **your talents** to ***find*** you on the `internet`, and **contact** you ***based*** on the **work** they ***see***, regarding **open positions**. That's ***also*** why it is **extremely important** to **put** your ***best foot*** forward and ***do*** your ***best work*** possible, thereby **showing** the ***best side*** of **yourself** when ***building*** your `portfolio site`.
 
 It ***won't*** take much to **make** your `contact.html` **page** completely `real world`. Simply ***remove*** the `form element` with the `id` of `"userForm"`, and the `section element` with the **class** of `"warning"` **right below** it. ***Keep*** the `div element` with the **class** of `"contact-form-wrapper"` and the `section element` with the **class** of `"contact-info"`. ***That way***, all that will be **left** is the `"Contact your name"` **section**.
 
@@ -493,7 +493,7 @@ There are ***many other*** different resources out there that **explain** how to
 
 + [`<form>`: MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 
-+ [<input>: The Input (Form Input) element: MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
++ [`<input>`: The Input (Form Input) element: MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 + [`<button>`: The Button element: MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
 
