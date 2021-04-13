@@ -461,6 +461,8 @@ In **web design**, sometimes it may ***seem*** at first that **styling** of an `
 
 The `index.html` **file** here contains ***all*** the `contact.html` **related** `markup` that I have in my **production version** of the **page** on the [Sectioning HTML](https://github.com/interglobalmedia/sectioning-html) slide deck **repository**, and ***all*** the **associated** `CSS code` for the `contact.html` **page** is ***included*** in the `styles/contact.css` **external stylesheet** within ***this*** `Basic Contact Form` slide deck **repository**.
 
+The `styles/contact.css` **external stylesheet** is ***included*** in the [Sectioning HTML](https://github.com/interglobalmedia/sectioning-html) **slide deck repository** as well.
+
 </section>
 
 ---
